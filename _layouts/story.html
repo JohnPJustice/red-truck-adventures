@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<!-- Page hero -->
+<section class="page-hero">
+  {% if page.image %}
+  <img class="page-hero__bg"
+       src="{{ page.image }}"
+       alt="{{ page.title }}"
+       loading="lazy">
+  {% endif %}
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">{{ page.topic | default: "PNW Stories" }}</span>
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--narrow">
+
+    <!-- Meta -->
+    <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem; flex-wrap:wrap;">
+      <span style="font-size:0.8rem; color:#A89880;">{{ page.date | date: "%B %d, %Y" }}</span>
+      {% if page.location %}
+      <span style="font-size:0.8rem; color:#A89880;">· {{ page.location }}</span>
+      {% endif %}
+      {% if page.topic %}
+      <span class="badge">{{ page.topic }}</span>
+      {% endif %}
+    </div>
+
+    <!-- Article content -->
+    <div class="article-body">
+      {{ content }}
+    </div>
+
+    <!-- Back link -->
+    <div style="margin-top:4rem; padding-top:2rem; border-top:1px solid #F2EDE4;">
+      <a href="{{ '/pnw-stories' | prepend: site.baseurl }}" class="btn btn--outline-dark">← All Stories</a>
+    </div>
+
+  </div>
+</section>

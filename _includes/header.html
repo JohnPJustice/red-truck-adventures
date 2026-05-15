@@ -1,0 +1,73 @@
+<header class="site-header" id="site-header">
+  <nav class="nav" aria-label="Main navigation">
+
+    <!-- Logo -->
+    <a href="{{ '/' | prepend: site.baseurl }}" class="nav__logo" aria-label="Red Truck Adventures home">
+      <div class="nav__logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+      </div>
+      <div class="nav__logo-text">
+        <span class="brand-name">Red Truck Adventures</span>
+        <span class="brand-tagline">Pacific Northwest</span>
+      </div>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links" role="list">
+      <li class="nav__link">
+        <a href="{{ '/' | prepend: site.baseurl }}"
+           {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      </li>
+      <li class="nav__link">
+        <a href="{{ '/adventures/' | prepend: site.baseurl }}"
+           {% if page.url contains '/adventures' %}class="active"{% endif %}>Adventures</a>
+      </li>
+      <li class="nav__link">
+        <a href="{{ '/gear-reviews/' | prepend: site.baseurl }}"
+           {% if page.url contains '/gear' %}class="active"{% endif %}>Gear</a>
+      </li>
+      <li class="nav__link">
+        <a href="{{ '/shop/' | prepend: site.baseurl }}"
+           {% if page.url contains '/shop' %}class="active"{% endif %}>Shop</a>
+      </li>
+      <li class="nav__link">
+        <a href="{{ '/pnw-stories/' | prepend: site.baseurl }}"
+           {% if page.url contains '/pnw-stories' or page.url contains '/stories/' %}class="active"{% endif %}>Stories</a>
+      </li>
+      <li class="nav__link">
+        <a href="{{ '/about/' | prepend: site.baseurl }}"
+           {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
+      </li>
+      <li class="nav__link nav__link--cta">
+        <a href="{{ '/contact/' | prepend: site.baseurl }}"
+           {% if page.url contains '/contact' %}class="active"{% endif %}>Contact</a>
+      </li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="nav__hamburger"
+            id="nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+  <!-- Mobile dropdown -->
+  <nav class="nav__mobile" id="nav-mobile" aria-label="Mobile navigation">
+    <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+    <a href="{{ '/adventures/' | prepend: site.baseurl }}">Adventures</a>
+    <a href="{{ '/gear-reviews/' | prepend: site.baseurl }}">Gear Reviews</a>
+    <a href="{{ '/shop/' | prepend: site.baseurl }}">Digital Shop</a>
+    <a href="{{ '/pnw-stories/' | prepend: site.baseurl }}">PNW Stories</a>
+    <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+    <a href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
+  </nav>
+
+</header>

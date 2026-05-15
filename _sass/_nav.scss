@@ -1,0 +1,186 @@
+// ─── Sticky Header ───────────────────────────────────────────────────────────
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  background: rgba($color-charcoal, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba($color-white, 0.06);
+  transition: box-shadow $transition, background $transition;
+
+  &.scrolled {
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.32);
+    background: rgba($color-charcoal, 0.99);
+  }
+}
+
+// ─── Nav Container ───────────────────────────────────────────────────────────
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $space-lg;
+
+  // Logo
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    flex-shrink: 0;
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+      background: $color-red;
+      border-radius: $radius-sm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background $transition;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: $color-white;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+
+      .brand-name {
+        font-family: $font-heading;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $color-white;
+        letter-spacing: 0.01em;
+      }
+
+      .brand-tagline {
+        font-size: 0.58rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $color-warm-gray;
+      }
+    }
+
+    &:hover .nav__logo-icon { background: darken($color-red, 8%); }
+    &:hover .brand-name      { color: $color-cream; }
+  }
+
+  // Desktop links list
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    a {
+      display: block;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.84rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: rgba($color-white, 0.78);
+      border-radius: $radius-sm;
+      transition: color $transition, background $transition;
+
+      &:hover,
+      &.active {
+        color: $color-white;
+        background: rgba($color-white, 0.08);
+      }
+    }
+
+    &--cta a {
+      background: $color-red;
+      color: $color-white;
+      padding: 0.4rem 1rem;
+
+      &:hover {
+        background: darken($color-red, 8%);
+        color: $color-white;
+      }
+    }
+  }
+
+  // Hamburger toggle (hidden on desktop)
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    background: none;
+    border-radius: $radius-sm;
+    transition: background $transition;
+
+    &:hover { background: rgba($color-white, 0.08); }
+
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: $color-white;
+      border-radius: 2px;
+      transition: transform 0.28s ease, opacity 0.28s ease;
+    }
+
+    &.open {
+      span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+      span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
+  }
+
+  // Mobile dropdown panel
+  &__mobile {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba($color-charcoal, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba($color-white, 0.08);
+    padding: $space-sm $space-lg $space-lg;
+    z-index: 999;
+    flex-direction: column;
+
+    &.open { display: flex; }
+
+    a {
+      display: block;
+      padding: 0.9rem 0;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba($color-white, 0.82);
+      border-bottom: 1px solid rgba($color-white, 0.06);
+      transition: color $transition;
+
+      &:hover   { color: $color-white; }
+      &:last-child { border-bottom: none; }
+    }
+  }
+}
