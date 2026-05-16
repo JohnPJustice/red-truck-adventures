@@ -113,6 +113,7 @@ description: "Documenting real places, real drives, and real stories from the Pa
 </section>
 
 <!-- ── Gear Highlights ────────────────────────────────────────────────────────── -->
+{% if site.show_gear %}
 <section class="section section--cream">
   <div class="container">
     <div class="section-header">
@@ -157,8 +158,10 @@ description: "Documenting real places, real drives, and real stories from the Pa
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- ── Shop Teaser ────────────────────────────────────────────────────────────── -->
+{% if site.show_shop %}
 <section class="section section--forest">
   <div class="container">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
@@ -181,6 +184,7 @@ description: "Documenting real places, real drives, and real stories from the Pa
     </div>
   </div>
 </section>
+{% endif %}
 
 <!-- ── PNW Stories Teaser ─────────────────────────────────────────────────────── -->
 <section class="section">
