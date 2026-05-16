@@ -31,14 +31,18 @@
         <a href="{{ '/adventures/' | prepend: site.baseurl }}"
            {% if page.url contains '/adventures' %}class="active"{% endif %}>Adventures</a>
       </li>
+      {% if site.show_gear %}
       <li class="nav__link">
         <a href="{{ '/gear-reviews/' | prepend: site.baseurl }}"
            {% if page.url contains '/gear' %}class="active"{% endif %}>Gear</a>
       </li>
+      {% endif %}
+      {% if site.show_shop %}
       <li class="nav__link">
         <a href="{{ '/shop/' | prepend: site.baseurl }}"
            {% if page.url contains '/shop' %}class="active"{% endif %}>Shop</a>
       </li>
+      {% endif %}
       <li class="nav__link">
         <a href="{{ '/pnw-stories/' | prepend: site.baseurl }}"
            {% if page.url contains '/pnw-stories' or page.url contains '/stories/' %}class="active"{% endif %}>Stories</a>
@@ -70,8 +74,8 @@
   <nav class="nav__mobile" id="nav-mobile" aria-label="Mobile navigation">
     <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
     <a href="{{ '/adventures/' | prepend: site.baseurl }}">Adventures</a>
-    <a href="{{ '/gear-reviews/' | prepend: site.baseurl }}">Gear Reviews</a>
-    <a href="{{ '/shop/' | prepend: site.baseurl }}">Digital Shop</a>
+    {% if site.show_gear %}<a href="{{ '/gear-reviews/' | prepend: site.baseurl }}">Gear Reviews</a>{% endif %}
+    {% if site.show_shop %}<a href="{{ '/shop/' | prepend: site.baseurl }}">Digital Shop</a>{% endif %}
     <a href="{{ '/pnw-stories/' | prepend: site.baseurl }}">PNW Stories</a>
     <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
     <a href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
