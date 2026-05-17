@@ -18,7 +18,7 @@ Columbia Valley Gardens is more than just flowers. It's an experience of texture
 
 Once you've walked through the gardens, head towards the lake. There are benches with views, and you can get a sense of how the whole garden fits into the landscape. The Insta360 X5 captured some good slow-motion shots here, as the light filtering through the trees makes interesting patterns on the water.
 
-Continue along the lakefront path. You'll see families picnicking, couples taking walks, and maybe even a fisherman casting a line. This section is good for still shots with the Fujifilm X-T2; try to capture the reflections of the gardens in the water.
+Continue along the lakefront path. You'll see families picnicking, couples taking walks, and maybe even a fisherman casting a line. This section is good for still shots; try to capture the reflections of the gardens in the water.
 
 The lakefront path leads you back towards the main gardens, but it's worth taking a detour onto East Kessler Boulevard for a few minutes. The houses here are mostly from the mid-20th century, with tidy lawns and interesting landscaping.
 
