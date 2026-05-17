@@ -11,15 +11,15 @@ excerpt: "A drive through rolling hills and farmland to reach the peaceful trail
 
 The route from Longview doesn't offer big vistas or mountain passes. There are no roadside attractions in the traditional sense. What it has is a gentle rise through farms, fields, and pockets of old-growth forest along quiet backroads. 
 
-## Stop 1: Starting Your Adventure in Cowlitz County
+## Starting Your Adventure in Cowlitz County
 
 Longview itself is a small town centered around its historic downtown. The buildings are mostly brick and wood, with storefronts that have been there for decades. There's a coffee shop on Allen Street that serves decent pastries—a good place to fuel up before you head out.
 
-## Between Stop 1 and Stop 2: A Scenic Journey on Willow Grove Road
+## A Scenic Journey on Willow Grove Road
 
 Willow Grove Road itself is a narrow two-lane road, mostly paved but with some gravel sections. There are a few houses along the way, often set back from the road with mature trees in front. The speed limit is around 35 mph, which gives you time to take it all in.
 
-## Stop 2: Reaching Willow Grove Park
+## Reaching Willow Grove Park
 
 Willow Grove Park sits on a gentle rise overlooking the surrounding farmland. There are picnic tables scattered throughout the park, as well as a couple of shelters that can be reserved for groups. The trails themselves wind through second-growth Douglas fir and western hemlock, with glimpses of water in some sections.
 
