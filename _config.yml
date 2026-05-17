@@ -27,6 +27,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+feed:
+  collections:
+    - adventures
+    - stories
+
 # Collections
 collections:
   adventures:
