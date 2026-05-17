@@ -1,33 +1,34 @@
 ---
-title: "Willow Grove Park Loop"
+title: "Scenic Morning Drive to Willow Grove Park"
 location: "Longview, WA"
-date: 2026-05-01
+date: 2025-11-13
 category: day-trip
-tags: [parks, longview, walking, nature]
-image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80"
-excerpt: "A quiet morning circuit through one of Longview's oldest parks — tall firs, a creek crossing, and almost no one else out."
+tags: [driving, cowlitz county, parks, nature]
+image: "https://images.unsplash.com/photo-1562569665-84986a052d8c?auto=format&fit=crop&w=1200&q=80"
+video_id: "6NR0zCypxsM"
+excerpt: "A drive through rolling hills and farmland to reach the peaceful trails of Willow Grove Park."
 ---
 
-Willow Grove Park sits on the eastern edge of Longview in a way that most people drive past rather than into. It's not the kind of place that shows up on lists. There's no waterfall, no interpretive trail, no gift shop. What it has is a long loop through second-growth Douglas fir, a small creek that runs high in spring, and a decent amount of quiet.
+The route from Longview doesn't offer big vistas or mountain passes. There are no roadside attractions in the traditional sense. What it has is a gentle rise through farms, fields, and pockets of old-growth forest along quiet backroads. 
 
-## The Route
+## Stop 1: Starting Your Adventure in Cowlitz County
 
-The main loop runs about 1.4 miles. You start at the lower parking area on Willow Grove Road, follow the trail north along the creek, climb gently through the fir stand to the upper bench, and come back down on the west side. There's one wooden bridge crossing that gets slick in the rain — worth noting if you're in street shoes.
+Longview itself is a small town centered around its historic downtown. The buildings are mostly brick and wood, with storefronts that have been there for decades. There's a coffee shop on Allen Street that serves decent pastries—a good place to fuel up before you head out.
 
-The upper bench opens into a small meadow that doesn't look like much in summer but catches light well in the early morning. In late April and early May, the sword ferns are at full height. The understory here is clean — whoever maintains this park does a consistent job of keeping the invasive blackberry back.
+## Between Stop 1 and Stop 2: A Scenic Journey on Willow Grove Road
 
-## What You'll Find
+Willow Grove Road itself is a narrow two-lane road, mostly paved but with some gravel sections. There are a few houses along the way, often set back from the road with mature trees in front. The speed limit is around 35 mph, which gives you time to take it all in.
 
-The park has two picnic shelters, both built in the late 1930s from the same stone-and-timber pattern you see in a lot of New Deal-era parks in the Northwest. They're in good condition. The stonework is original.
+## Stop 2: Reaching Willow Grove Park
 
-There's a small population of varied thrush in here through winter and into early spring. By late April they're mostly gone, but you'll still hear them occasionally. The creek has cutthroat trout — small, not fishable under county rules, but visible from the bridge if you stand still long enough.
+Willow Grove Park sits on a gentle rise overlooking the surrounding farmland. There are picnic tables scattered throughout the park, as well as a couple of shelters that can be reserved for groups. The trails themselves wind through second-growth Douglas fir and western hemlock, with glimpses of water in some sections.
 
 ## Notes on Filming
 
-The light window in this park is narrow. It's heavily canopied, so midday doesn't work. Early morning gives you maybe 90 minutes of diffused light through the canopy before it gets too flat. The creek section is the most filmable — the water catches whatever light comes through.
+The light window here is narrow, especially later in the morning. The best time to film is probably between 8 and 10 am when there's still some diffused light coming through the canopy.
 
-Drone use is restricted in the park proper. The aerial footage in the video was taken from a pullout on Willow Grove Road, which is outside the park boundary.
+I used an Insta360 X5 for the moving shots along the roads, and a Fujifilm X-T2 for stills of the park itself. The X5's FlowState stabilization handled the bumpy gravel sections without issue, and the X-T2's dynamic range was great for capturing the contrast between the shaded trails and the brighter open areas.
 
 ## Getting There
 
-From downtown Longview: east on Olympia Way, left on Willow Grove Road. The parking area is on the left about half a mile in. No fee.
+From downtown Longview: head east on Allen Street, then south onto Willow Grove Road. The parking area is about 3 miles in on your left. No fee. 

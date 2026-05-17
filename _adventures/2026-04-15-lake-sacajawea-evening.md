@@ -1,40 +1,34 @@
 ---
-title: "Lake Sacajawea at Dusk"
+title: "Exploring Lake Sacajawea in the Morning: A 360 Immersive Adventure"
 location: "Longview, WA"
-date: 2026-04-15
-category: evening-drive
-tags: [lake, longview, urban-nature, golden-hour]
-image: "https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?auto=format&fit=crop&w=1200&q=80"
-video_id: "YOUTUBE_VIDEO_ID"
-excerpt: "An evening loop around Lake Sacajawea — still water, low light, and a park that's been part of Longview since the city was built."
+date: 2025-11-21
+category: morning-trip
+tags: [lake-views, gardens, longview, morning-drive, photography]
+image: "https://images.unsplash.com/photo-1655974097736-d600a23a756d?auto=format&fit=crop&w=1200&q=80"
+video_id: "Fmre2WZhilA"
+excerpt: "A scenic drive through Longview's Columbia Valley Gardens and around Lake Sacajawea for those who love peaceful mornings and the outdoors."
 ---
 
-Lake Sacajawea is the centerpiece of Longview's original park system, built alongside the city in the early 1920s. R.A. Long, the lumber magnate who platted Longview, wanted a planned city with parks designed in from the start — not added later. This lake is part of that original layout. It's been here as long as the street grid has.
+This route isn't about speed or hitting a lot of landmarks. It's about starting your day with the quiet beauty of Columbia Valley Gardens and then letting the gentle drive along Lake Sacajawea set the pace.
+There are no sweeping vistas or high-altitude overlooks here. What you get is a chance to see how light changes on water, the way gardens shift from morning dew to full bloom, and the small details that make up a town like Longview.
 
-The lake itself is man-made, fed by a small channel from the Cowlitz River system. It runs roughly north to south through the middle of town. The loop trail around it is about 3.3 miles on pavement, with a few benches, a rose garden on the east side, and a Japanese Garden at the south end that's worth stopping at separately.
+## Stop 1: Columbia Valley Gardens 
 
-## Evening Timing
+Columbia Valley Gardens is more than just flowers. It's an experience of textures —  rough bark against smooth stone, soft petals brushing your hand, the cool dampness of the Japanese Garden pond. The path isn't always clear, so wander a bit. The rose garden is beautiful in spring, but the real surprise might be a hidden gazebo or a patch of ferns catching sunlight.
+ 
+## Stop 2:  Columbia Valley Gardens (Lakefront) 
 
-Dusk is the right time here. The lake surface flattens out as the wind drops, and the reflections of the maple trees on the west bank come in clearly in late April and May. The Japanese maples near the south pavilion hit their peak color in early November, which is a different trip worth making.
+Once you've walked through the gardens, head towards the lake. There are benches with views, and you can get a sense of how the whole garden fits into the landscape. The Insta360 X5 captured some good slow-motion shots here, as the light filtering through the trees makes interesting patterns on the water.
 
-The light window at dusk in April is about 45 minutes — roughly from 7:45 to 8:30 PM. The golden light hits the water from the west and then goes pink-gray as the sun drops behind the hills. That transition is the part worth filming.
+## Stop 3: Columbia Valley Gardens (Lakefront) 
 
-## The Japanese Garden
+Continue along the lakefront path. You'll see families picnicking, couples taking walks, and maybe even a fisherman casting a line. This section is good for still shots with the Fujifilm X-T2; try to capture the reflections of the gardens in the water.
 
-The Japanese Garden at the south end was donated to the city in the mid-20th century and has been maintained by a local volunteer group. It's small — maybe half an acre — but the stonework and the koi pond are in good condition. The gate is open during park hours.
+## Stop 4:  Columbia Valley Gardens (Lakefront) 
 
-If you've been to Japanese gardens in Portland or Seattle, this one is quieter and less curated. It feels like a neighborhood garden rather than a tourist attraction, which is exactly what it is.
-
-## Wildlife
-
-The lake has a large Canada goose population that's been there year-round for as long as anyone can remember. They're not shy. There are also great blue herons working the shallower north end in the morning. In winter, bufflehead and ring-necked ducks use the lake before moving on.
-
-## Notes on Filming
-
-The main challenge here is the road noise from Pacific Avenue along the east bank. It doesn't affect the image, but it bleeds into audio on still evenings. A directional mic pointed away from the road helps.
-
-The Japanese Garden is filmable but the light is late and filtered — best on overcast days rather than clear evenings. The pavilion near the south end has good architectural lines in flat light.
+The lakefront path leads you back towards the main gardens, but it's worth taking a detour onto East Kessler Boulevard for a few minutes. The houses here are mostly from the mid-20th century, with tidy lawns and interesting landscaping.
 
 ## Getting There
+From downtown Longview: South on Louisiana Street to Northeast Nichols Boulevard. Continue onto Northwest Nichols Boulevard, then turn left onto 18th Avenue to reach Columbia Valley Gardens.
+There's a large parking lot at the entrance. No fee.   
 
-The park runs through the center of Longview along Lake Sacajawea Drive. Multiple parking areas on both sides. No fee.

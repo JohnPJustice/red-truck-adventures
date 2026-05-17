@@ -69,6 +69,6 @@ There's a small bridge crossing at mile 8 that's the right stopping point before
 **Condition:** Four-lane to two-lane  
 **Best time:** Southbound in afternoon light; any clear day
 
-US-30 on the Washington side of the Columbia between Vancouver and Longview isn't a dramatic scenic road — it's largely industrial and suburban. But the bridge crossings, the river views on the stretch north of Ridgefield, and the industrial scale of the Portland-Vancouver port complex make it worth doing once with the purpose of actually looking at what's there.
+I-5 on the Washington side of the Columbia between Vancouver and Longview isn't a dramatic scenic road — it's largely industrial and suburban. But the bridge crossings, the river views on the stretch north of Ridgefield, and the industrial scale of the Portland-Vancouver port complex make it worth doing once with the purpose of actually looking at what's there.
 
 The best section is the 15 miles north of Ridgefield, where the highway pulls close to the Columbia and the river is wide and straight. Eastbound in morning light, the view across to Oregon is clean.
