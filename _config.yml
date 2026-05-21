@@ -1,7 +1,7 @@
 title: Red Truck Adventures
 description: "Documenting real places, real drives, and real stories from the Pacific Northwest."
 # Replace USERNAME with your GitHub username. For local dev run: bundle exec jekyll serve --baseurl ""
-url: "https://JohnPJustice.github.io"
+url: "https://redtruckadventures.com"
 baseurl: "/red-truck-adventures"
 
 # Author / SEO
