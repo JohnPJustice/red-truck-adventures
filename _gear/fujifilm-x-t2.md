@@ -42,7 +42,7 @@ The body is rated for weather and dust resistance, which in Pacific Northwest te
 
 ## Video Limitations
 
-The 4K is capped at 15fps, which is not usable for normal motion video. 1080p at 60fps works for slow-motion capture. If video is part of the workflow, the X-T2 is not the right body — the Sony ZV-E10 or a dedicated video-capable camera belongs in that role. The X-T2 is a photography-first body and should be evaluated as one.
+The 4K is capped at 15fps, which is not usable for normal motion video. 1080p at 60fps works for slow-motion capture. The X-T2 is a photography-first body and should be evaluated as one. If you want to shoot video, the X-T4 or X-H2 are the natural upgrades in the Fujifilm lineup. For stills shooters who want a rugged body with good color and don't care about video, the X-T2 remains a strong choice at used prices that are a fraction of the newer models.
 
 ## Practical Lens Pairing
 

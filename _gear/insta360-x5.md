@@ -34,8 +34,6 @@ This is the feature that earns the camera its place. The horizon-lock and stabil
 
 Previous generations of the Insta360 X series struggled in low light in ways that limited when you could actually use them. The X5 is a meaningful step forward. Shooting at golden hour on the Columbia River — high contrast between the lit water and the dark Washington side — the Active HDR mode holds both ends of the exposure. At dusk, the sensor noise stays controlled enough that the footage is usable without aggressive noise reduction in post.
 
-It is not a low-light specialist. The Sony ZV-E10 with a fast prime will outperform it in a dark forest. But the X5 is no longer a camera you put away when the light gets interesting.
-
 ## Practical Setup for Adventure Use
 
 The X5 is at its best when it's mounted somewhere you'd otherwise have no camera. On the roll bar above the windshield, it captures the full cab interior and everything out the windshield simultaneously — driver reaction, road, and sky in one file. On a chest harness, it covers both your perspective and what's happening behind you on a trail. On a kayak deck mount, it gets shots that a handheld camera cannot.
