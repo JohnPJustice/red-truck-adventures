@@ -1,0 +1,224 @@
+---
+layout: default
+title: "Red Truck Adventures — Pacific Northwest Stories"
+description: "Documenting real places, real drives, and real stories from the Pacific Northwest. Adventure videography, gear reviews, and local history from the Lower Columbia region."
+---
+
+<!-- ── Hero ─────────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <img class="hero__bg"
+       src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=80"
+       alt="Misty Pacific Northwest old-growth forest"
+       loading="eager"
+       fetchpriority="high">
+  <div class="hero__overlay"></div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__label">Pacific Northwest &bull; Lower Columbia Region</span>
+      <h1 class="hero__title">The road shows you things. You just have to drive it.</h1>
+      <p class="hero__subtitle">Real drives, real places, real stories — from the forests and highways of the Pacific Northwest.</p>
+      <div class="hero__actions">
+        <a href="{{ '/adventures/' | prepend: site.baseurl }}" class="btn btn--primary">Watch Adventures</a>
+        <a href="{{ '/about/' | prepend: site.baseurl }}" class="btn btn--outline">Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Mission ───────────────────────────────────────────────────────────────── -->
+<section class="section section--cream">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div>
+        <span class="section-label">Why We Drive</span>
+        <h2>Honest storytelling from the ground level</h2>
+        <div class="mission-block" style="margin:1.5rem 0;">
+          <p>No hype. No sponsored scripts. Just a truck, a camera, and places worth documenting.</p>
+        </div>
+        <p style="color:#6B6560;">Red Truck Adventures covers the Pacific Northwest with a focus on local history, scenic drives, gear that actually works, and communities worth knowing. Based in the Lower Columbia region.</p>
+        <a href="{{ '/about/' | prepend: site.baseurl }}" class="btn btn--outline-dark" style="margin-top:1rem;">Read the story →</a>
+      </div>
+      <div>
+        <div class="img-container img-container--4x3" style="border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.14);">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80"
+               alt="Pacific Northwest mountain panorama"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Latest Adventures ─────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Recent Trips</span>
+      <h2>Latest Adventures</h2>
+      <p>Recent drives and discoveries from around the Lower Columbia region and beyond.</p>
+    </div>
+
+    <div class="grid grid--3">
+      {% for adventure in site.adventures limit:3 %}
+      <article class="card">
+        <a href="{{ adventure.url | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
+          <div class="img-container img-container--3x2">
+            <img src="{{ adventure.image }}" alt="{{ adventure.title }}" loading="lazy">
+          </div>
+        </a>
+        <div class="card__body">
+          <span class="card__label">{{ adventure.location }}</span>
+          <h3 class="card__title">
+            <a href="{{ adventure.url | prepend: site.baseurl }}">{{ adventure.title }}</a>
+          </h3>
+          <div class="card__meta">
+            <span>{{ adventure.date | date: "%B %Y" }}</span>
+          </div>
+          <p class="card__excerpt">{{ adventure.excerpt }}</p>
+          <a href="{{ adventure.url | prepend: site.baseurl }}" class="btn btn--outline-dark btn--sm">Watch &amp; Read →</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-xl">
+      <a href="{{ '/adventures/' | prepend: site.baseurl }}" class="btn btn--outline-dark">All Adventures →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Featured Video ────────────────────────────────────────────────────────── -->
+<section class="section section--dark">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div>
+        <span class="section-label" style="color:#A89880;">Featured Video</span>
+        <h2 style="color:#F2EDE4;">Drive from Portland Oregon, to Ridgefield Washington IN-N-OUT Burger</h2>
+        <p style="color:rgba(242,237,228,0.78);">A scenic drive with a stop at the iconic IN-N-OUT Burger in Ridgefield, Washington.</p>
+        <a href="{{ '/adventures/portland-oregon-to-ridgefield-washington-in-and-out-burger-blog/' | prepend: site.baseurl }}"
+           class="btn btn--primary" style="margin-top:1.5rem;">Full Trip →</a>
+      </div>
+      <div class="video-embed">
+        <!-- Replace YOUTUBE_VIDEO_ID with your actual YouTube video ID -->
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/ZuE6hg3BbuI?rel=0&modestbranding=1"
+          title="Drive from Portland Oregon, to Ridgefield Washington IN-N-OUT Burger"
+          sandbox="allow-scripts allow-same-origin allow-presentation"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Gear Highlights ────────────────────────────────────────────────────────── -->
+{% if site.show_gear %}
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Use</span>
+      <h2>Gear Reviews</h2>
+      <p>Cameras, drones, and truck builds — reviewed honestly from the field.</p>
+    </div>
+
+    <div class="grid grid--3">
+      {% for item in site.gear limit:3 %}
+      <div class="review-card">
+        <div class="review-card__image">
+          <div class="img-container img-container--3x2">
+            <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+          </div>
+        </div>
+        <div class="review-card__body">
+          <div class="review-card__category">{{ item.category }}</div>
+          <div class="review-card__title">{{ item.title }}</div>
+          <div class="review-card__rating">
+            <div class="stars">
+              {% assign full = item.rating | floor %}
+              {% for i in (1..5) %}
+                {% if i <= full %}
+                <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                {% else %}
+                <svg class="star empty" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <span class="rating-value">{{ item.rating }}/5</span>
+          </div>
+          <p class="review-card__summary">{{ item.excerpt }}</p>
+          <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn--outline-dark btn--sm">Full Review →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-xl">
+      <a href="{{ '/gear-reviews/' | prepend: site.baseurl }}" class="btn btn--outline-dark">All Gear Reviews →</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Shop Teaser ────────────────────────────────────────────────────────────── -->
+{% if site.show_shop %}
+<section class="section section--forest">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div>
+        <span class="section-label" style="color:rgba(168,152,128,0.9);">Digital Products</span>
+        <h2 style="color:#F2EDE4;">Tools built for the PNW</h2>
+        <p style="color:rgba(242,237,228,0.75); margin-bottom:1.5rem;">Calendars, color presets, LUT packs, and field guides — made from real Pacific Northwest light and terrain. Download and use immediately.</p>
+        <a href="{{ '/shop/' | prepend: site.baseurl }}" class="btn btn--primary">Browse the Shop →</a>
+      </div>
+      <div class="grid grid--2" style="gap:1rem;">
+        {% assign items = "LUT Pack|PNW Overcast — 12 Cinematic LUTs,Calendar|Lower Columbia 2027 Photo Calendar,Preset Pack|Lightroom Mobile — PNW Muted Greens,Field Guide|Scenic Drive Guide — Cowlitz County" | split: "," %}
+        {% for item in items %}
+        {% assign parts = item | split: "|" %}
+        <div style="background:rgba(255,255,255,0.07); border-radius:8px; padding:1.25rem; border:1px solid rgba(255,255,255,0.09);">
+          <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.13em; text-transform:uppercase; color:#A89880; margin-bottom:0.5rem;">{{ parts[0] }}</div>
+          <div style="font-family:'Playfair Display',serif; color:#F2EDE4; font-size:0.95rem; line-height:1.35;">{{ parts[1] }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── PNW Stories Teaser ─────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Local Knowledge</span>
+      <h2>PNW Stories</h2>
+      <p>Local history, environmental notes, and context behind the places we drive through.</p>
+    </div>
+
+    <div style="max-width:800px;">
+      {% for story in site.stories limit:3 %}
+      <div class="story-card">
+        <div class="story-card__image">
+          <div class="img-container" style="position:relative; height:120px; overflow:hidden; border-radius:8px;">
+            <img src="{{ story.image }}" alt="{{ story.title }}"
+                 loading="lazy"
+                 style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+        <div class="story-card__content">
+          <div class="story-card__label">{{ story.topic | default: "PNW" }}</div>
+          <h3 class="story-card__title">
+            <a href="{{ story.url | prepend: site.baseurl }}">{{ story.title }}</a>
+          </h3>
+          <p class="story-card__excerpt">{{ story.excerpt }}</p>
+          <p class="story-card__meta">{{ story.date | date: "%B %d, %Y" }} &middot; {{ story.location }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top:2rem;">
+      <a href="{{ '/pnw-stories/' | prepend: site.baseurl }}" class="btn btn--outline-dark">All Stories →</a>
+    </div>
+  </div>
+</section>

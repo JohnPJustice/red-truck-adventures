@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+// ─── Headings ────────────────────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  line-height: 1.25;
+  color: $color-charcoal;
+  margin-bottom: $space-md;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem);   font-weight: 700; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 600; }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem);  font-weight: 600; }
+h4 { font-size: 1.125rem; font-weight: 600; }
+
+// ─── Body Text ───────────────────────────────────────────────────────────────
+p {
+  margin-bottom: $space-md;
+  color: $color-text;
+}
+
+a {
+  color: $color-forest;
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover { color: $color-red; }
+}
+
+strong {
+  font-weight: 600;
+  color: $color-charcoal;
+}
+
+em { font-style: italic; }
+
+// ─── Media ───────────────────────────────────────────────────────────────────
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// ─── Lists ───────────────────────────────────────────────────────────────────
+ul, ol {
+  padding-left: $space-lg;
+  margin-bottom: $space-md;
+}
+
+li { margin-bottom: $space-xs; }
+
+// ─── Misc ────────────────────────────────────────────────────────────────────
+hr {
+  border: none;
+  border-top: 1px solid $color-cream;
+  margin: $space-xl 0;
+}
+
+blockquote {
+  border-left: 3px solid $color-red;
+  padding: $space-sm 0 $space-sm $space-lg;
+  margin: $space-lg 0;
+  font-style: italic;
+  color: $color-text-light;
+  font-family: $font-heading;
+  font-size: 1.15rem;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875em;
+  background: $color-cream;
+  padding: 2px 6px;
+  border-radius: $radius-sm;
+}

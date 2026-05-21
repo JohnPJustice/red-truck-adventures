@@ -1,0 +1,84 @@
+---
+layout: default
+title: Gear Reviews
+description: "Honest gear reviews from the field — cameras, drones, truck accessories, and outdoor essentials tested in the Pacific Northwest."
+---
+
+<section class="page-hero">
+  <img class="page-hero__bg"
+       src="https://images.unsplash.com/photo-1582043568773-a7a2b57239f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2VhcnN8ZW58MHx8MHx8fDI%3D?auto=format&fit=crop&w=1600&q=80"
+       alt="Drone in flight over Pacific Northwest landscape"
+       loading="lazy">
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">Field-Tested</span>
+      <h1>Gear Reviews</h1>
+      <p>Everything reviewed gets used. Ratings come from field time, not spec sheets.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    {% assign categories = site.gear | map: "category" | uniq | sort %}
+    {% for category in categories %}
+
+    <div class="category-heading">
+      <h3>{{ category }}</h3>
+    </div>
+
+    <div class="grid grid--3" style="margin-bottom:4rem;">
+      {% for item in site.gear %}
+        {% if item.category == category %}
+        <div class="review-card">
+          <div class="review-card__image">
+            <a href="{{ item.url | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
+              <div class="img-container img-container--3x2">
+                <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+              </div>
+            </a>
+          </div>
+          <div class="review-card__body">
+            <div class="review-card__category">{{ item.category }}</div>
+            <h2 class="review-card__title">
+              <a href="{{ item.url | prepend: site.baseurl }}" style="color:inherit; text-decoration:none;">{{ item.title }}</a>
+            </h2>
+            <div class="review-card__rating">
+              <div class="stars">
+                {% assign full = item.rating | floor %}
+                {% for i in (1..5) %}
+                  {% if i <= full %}
+                  <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                  {% else %}
+                  <svg class="star empty" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <span class="rating-value">{{ item.rating }}/5</span>
+            </div>
+            <p class="review-card__summary">{{ item.excerpt }}</p>
+            {% if item.pros or item.cons %}
+            <div class="review-card__pros-cons">
+              <div class="pros">
+                <h4>Pros</h4>
+                <ul>{% for pro in item.pros limit:3 %}<li>{{ pro }}</li>{% endfor %}</ul>
+              </div>
+              <div class="cons">
+                <h4>Cons</h4>
+                <ul>{% for con in item.cons limit:3 %}<li>{{ con }}</li>{% endfor %}</ul>
+              </div>
+            </div>
+            {% endif %}
+            <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn--outline-dark btn--sm">Full Review →</a>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% endfor %}
+
+  </div>
+</section>

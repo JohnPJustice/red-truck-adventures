@@ -1,0 +1,115 @@
+---
+layout: default
+title: Contact
+description: "Get in touch with Red Truck Adventures for business inquiries, collaborations, product purchases, and
+story tips."
+---
+
+<section class="page-hero">
+  <img class="page-hero__bg"
+    src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1600&q=80"
+    alt="Pacific Northwest forest aerial" loading="lazy">
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">Get in Touch</span>
+      <h1>Contact</h1>
+      <p>Business inquiries, collaborations, product purchases, and story tips.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:5rem; align-items:start;">
+
+      <!-- Contact Form -->
+      <div>
+        <h2 style="margin-bottom:0.5rem;">Send a message</h2>
+        <p style="color:#6B6560; margin-bottom:2.5rem;">Responses typically go out within 48 hours on business days.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="18ef7727-0002-488e-88a6-10fc4444b500">
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="collaboration">Collaboration / Partnership</option>
+              <option value="product-purchase">Product Purchase</option>
+              <option value="location-tip">Location Tip or Story Idea</option>
+              <option value="gear-question">Gear Question</option>
+              <option value="media">Media / Press</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Describe your inquiry in as much detail as helpful."
+              required></textarea>
+          </div>
+
+          <!-- Honeypot — hidden from humans, blocks basic bots -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <!-- Redirect after submission (optional — update to your thank-you path) -->
+          <input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/contact/?sent=true">
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Sidebar info -->
+      <aside style="position:sticky; top:100px;">
+
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="margin-bottom:1rem;">What to expect</h4>
+          <ul style="padding-left:1.25rem; color:#6B6560; font-size:0.9rem; line-height:1.8;">
+            <li>Responses within 48 business hours</li>
+            <li>Product purchases via email invoice</li>
+            <li>Collaborations considered on alignment with brand tone</li>
+            <li>Location tips always welcome — credit given when published</li>
+          </ul>
+        </div>
+
+        <div style="background:#F2EDE4; border-radius:12px; padding:1.5rem; margin-bottom:1.5rem;">
+          <h4 style="margin-bottom:0.75rem;">Follow Along</h4>
+          <div style="display:flex; flex-direction:column; gap:0.6rem;">
+            <a href="https://youtube.com/@RedTruckAdventures" target="_blank" rel="noopener noreferrer"
+              style="font-size:0.9rem; color:#2A4A3A; font-weight:500; display:flex; align-items:center; gap:0.5rem;">
+              <span>▶</span> YouTube
+            </a>
+            <a href="https://instagram.com/Red.Truck.Adventures" target="_blank" rel="noopener noreferrer"
+              style="font-size:0.9rem; color:#2A4A3A; font-weight:500; display:flex; align-items:center; gap:0.5rem;">
+              <span>◉</span> Instagram
+            </a>
+            <a href="https://facebook.com/RedTruckAdventures" target="_blank" rel="noopener noreferrer"
+              style="font-size:0.9rem; color:#2A4A3A; font-weight:500; display:flex; align-items:center; gap:0.5rem;">
+              <span>f</span> Facebook
+            </a>
+          </div>
+        </div>
+
+        <div style="background:#2C2E30; border-radius:12px; padding:1.5rem;">
+          <h4 style="color:#F2EDE4; margin-bottom:0.5rem;">Based in</h4>
+          <p style="font-size:0.875rem; color:rgba(242,237,228,0.65); margin:0;">
+            Pacific Northwest<br>
+            Lower Columbia Region
+          </p>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>

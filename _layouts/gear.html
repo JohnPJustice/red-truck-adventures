@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<!-- Page hero with gear cover image -->
+<section class="page-hero">
+  {% if page.image %}
+  <img class="page-hero__bg"
+       src="{{ page.image }}"
+       alt="{{ page.title }}"
+       loading="lazy">
+  {% endif %}
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">{{ page.category }}</span>
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--narrow">
+
+    <!-- Rating and meta -->
+    <div style="display:flex; align-items:center; flex-wrap:wrap; gap:1.25rem; margin-bottom:2rem;">
+      <div class="review-card__rating">
+        <div class="stars">
+          {% assign full = page.rating | floor %}
+          {% for i in (1..5) %}
+            {% if i <= full %}
+            <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+            </svg>
+            {% else %}
+            <svg class="star empty" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+            </svg>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <span class="rating-value">{{ page.rating }}/5</span>
+      </div>
+      <span class="badge">{{ page.category }}</span>
+      {% if page.price %}
+      <span style="font-size:0.9rem; color:#6B6560; font-weight:600;">{{ page.price }}</span>
+      {% endif %}
+    </div>
+
+    <!-- Pros / Cons -->
+    {% if page.pros or page.cons %}
+    <div class="review-card__pros-cons" style="margin-bottom:2rem;">
+      {% if page.pros %}
+      <div class="pros">
+        <h4>Pros</h4>
+        <ul>
+          {% for pro in page.pros %}<li>{{ pro }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if page.cons %}
+      <div class="cons">
+        <h4>Cons</h4>
+        <ul>
+          {% for con in page.cons %}<li>{{ con }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Article content -->
+    <div class="article-body">
+      {{ content }}
+    </div>
+
+    <!-- Back link -->
+    <div style="margin-top:4rem; padding-top:2rem; border-top:1px solid #F2EDE4;">
+      <a href="{{ '/gear-reviews' | prepend: site.baseurl }}" class="btn btn--outline-dark">← All Gear Reviews</a>
+    </div>
+
+  </div>
+</section>
