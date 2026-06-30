@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Drive from Longview, WA to Astoria, OR on a Beautiful Overcast Day"
 location: "Pacific Northwest, USA"
 date: 2026-06-12
