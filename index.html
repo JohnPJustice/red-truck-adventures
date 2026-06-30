@@ -59,7 +59,8 @@ description: "Documenting real places, real drives, and real stories from the Pa
     </div>
 
     <div class="grid grid--3">
-      {% for adventure in site.adventures limit:3 %}
+      {% assign latest_adventures = site.adventures | sort: "date" | reverse %}
+      {% for adventure in latest_adventures limit:3 %}
       <article class="card">
         <a href="{{ adventure.url | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
           <div class="img-container img-container--3x2">
@@ -91,23 +92,38 @@ description: "Documenting real places, real drives, and real stories from the Pa
 <section class="section section--dark">
   <div class="container">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      {% assign latest_video_adventures = latest_adventures | where_exp: "item", "item.video_id" %}
+      {% assign featured_video = latest_video_adventures | first %}
+      {% if featured_video %}
       <div>
         <span class="section-label" style="color:#A89880;">Featured Video</span>
-        <h2 style="color:#F2EDE4;">Drive from Portland Oregon, to Ridgefield Washington IN-N-OUT Burger</h2>
-        <p style="color:rgba(242,237,228,0.78);">A scenic drive with a stop at the iconic IN-N-OUT Burger in Ridgefield, Washington.</p>
-        <a href="{{ '/adventures/portland-oregon-to-ridgefield-washington-in-and-out-burger-blog/' | prepend: site.baseurl }}"
+        <h2 style="color:#F2EDE4;">{{ featured_video.title }}</h2>
+        <p style="color:rgba(242,237,228,0.78);">{{ featured_video.excerpt }}</p>
+        <a href="{{ featured_video.url | prepend: site.baseurl }}"
            class="btn btn--primary" style="margin-top:1.5rem;">Full Trip →</a>
       </div>
       <div class="video-embed">
-        <!-- Replace YOUTUBE_VIDEO_ID with your actual YouTube video ID -->
         <iframe
-          src="https://www.youtube-nocookie.com/embed/ZuE6hg3BbuI?rel=0&modestbranding=1"
-          title="Drive from Portland Oregon, to Ridgefield Washington IN-N-OUT Burger"
+          src="https://www.youtube-nocookie.com/embed/{{ featured_video.video_id }}?rel=0&modestbranding=1"
+          title="{{ featured_video.title }}"
           sandbox="allow-scripts allow-same-origin allow-presentation"
           allowfullscreen
           loading="lazy">
         </iframe>
       </div>
+      {% else %}
+      <div>
+        <span class="section-label" style="color:#A89880;">Featured Video</span>
+        <h2 style="color:#F2EDE4;">Video Coming Soon</h2>
+        <p style="color:rgba(242,237,228,0.78);">We are preparing the next road feature now. Check back soon for the latest trip.</p>
+      </div>
+      <div class="video-embed" style="display:flex; align-items:center; justify-content:center;">
+        <div style="text-align:center; color:rgba(255,255,255,0.4);">
+          <div style="font-size:2.5rem; margin-bottom:0.75rem;">▶</div>
+          <p style="margin:0; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase;">Video Coming Soon</p>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>
