@@ -1,8 +1,8 @@
----
+﻿---
 title: "Drive from Longview, WA to Astoria, OR on a Beautiful Overcast Day"
 location: "Pacific Northwest, USA"
 date: 2026-06-12
-category: local-story
+category: day-trip
 tags: [local-history, scenic-route, pacific-northwest]
 video_id: "4LwnKBFN4JI"
 image: "https://images.unsplash.com/photo-1595287998909-745f8f4b2dff?auto=format&fit=crop&w=1200&q=80"
