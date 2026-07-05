@@ -40,4 +40,3 @@ Time: 1–2 hours depending on stops
 Best time to visit: Year‑round; spring and fall offer the best mix of weather and atmosphere
 
 This drive is a perfect snapshot of the Pacific Northwest — river, forest, industry, and coastline all woven together. Take your time, enjoy the road, and let the Lower Columbia show you why this region keeps pulling people back.
-
