@@ -27,9 +27,19 @@ drafts:
 clean:
 	$(JEKYLL) clean
 
+# ── Strip UTF-8 BOM from all markdown files (prevents GitHub Pages build failures) ──
+fix-bom:
+	@python3 -c "\
+import os, glob; \
+files = glob.glob('**/*.md', recursive=True); \
+fixed = []; \
+[fixed.append(f) or open(f,'wb').write(open(f,'rb').read()[3:]) for f in files if open(f,'rb').read(3) == b'\xef\xbb\xbf']; \
+print('BOM removed from: ' + ', '.join(fixed)) if fixed else print('No BOM found in any .md files') \
+"
+
 # ── Full reinstall ────────────────────────────────────────────────────────────
 reset: clean
 	rm -f Gemfile.lock
 	$(BUNDLE) install
 
-.PHONY: install serve build drafts clean reset
+.PHONY: install serve build drafts clean reset fix-bom
