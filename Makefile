@@ -1,4 +1,11 @@
+ifeq ($(shell test -x /usr/local/opt/ruby@3.3/bin/ruby && echo yes),yes)
+RUBY_BIN := /usr/local/opt/ruby@3.3/bin
+else ifeq ($(shell test -x /opt/homebrew/opt/ruby@3.3/bin/ruby && echo yes),yes)
+RUBY_BIN := /opt/homebrew/opt/ruby@3.3/bin
+else
 RUBY_BIN := /c/Ruby33-x64/bin
+endif
+
 BUNDLE   := $(RUBY_BIN)/bundle
 JEKYLL   := $(BUNDLE) exec jekyll
 
