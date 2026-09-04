@@ -212,7 +212,8 @@ description: "Documenting real places, real drives, and real stories from the Pa
     </div>
 
     <div style="max-width:800px;">
-      {% for story in site.stories limit:3 %}
+      {% assign latest_stories = site.stories | sort: "date" | reverse %}
+      {% for story in latest_stories limit:3 %}
       <div class="story-card">
         <div class="story-card__image">
           <div class="img-container" style="position:relative; height:120px; overflow:hidden; border-radius:8px;">
