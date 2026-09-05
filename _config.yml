@@ -12,7 +12,7 @@ author:
 
 og_image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80"
 
-# Feature flags — set to false to hide pages from nav/footer
+# Feature flags: set to false to hide pages from nav/footer
 show_gear: false
 show_shop: false
 
@@ -22,6 +22,14 @@ permalink: pretty
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# Keep kramdown from converting straight quotes/dashes into typographic ones
+kramdown:
+  smart_quotes: [apos, apos, quot, quot]
+  typographic_symbols:
+    hellip: "..."
+    mdash: "--"
+    ndash: "-"
 
 plugins:
   - jekyll-feed

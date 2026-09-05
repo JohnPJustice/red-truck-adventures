@@ -1,28 +1,28 @@
 ---
-title: "Exploring Lake Sacajawea in the Morning: A 360 Immersive Adventure"
+title: "Lake Sacajawea and Columbia Valley Gardens in the Morning"
 location: "Longview, WA"
 date: 2025-11-21
 category: morning-trip
 tags: [lake-views, gardens, longview, morning-drive, photography]
 image: "https://images.unsplash.com/photo-1655974097736-d600a23a756d?auto=format&fit=crop&w=1200&q=80"
 video_id: "Fmre2WZhilA"
-excerpt: "A scenic drive through Longview's Columbia Valley Gardens and around Lake Sacajawea for those who love peaceful mornings and the outdoors."
+excerpt: "A short morning loop through Columbia Valley Gardens and around Lake Sacajawea in Longview."
 ---
 
-This route isn't about speed or hitting a lot of landmarks. It's about starting your day with the quiet beauty of Columbia Valley Gardens and then letting the gentle drive along Lake Sacajawea set the pace.
-There are no sweeping vistas or high-altitude overlooks here. What you get is a chance to see how light changes on water, the way gardens shift from morning dew to full bloom, and the small details that make up a town like Longview.
+This route isn't about covering distance. You park once, walk the gardens, and drive the lake loop. That's it.
 
-## Columbia Valley Gardens 
+There are no overlooks and no vistas. What you get is light on water and a decent look at how Longview was laid out.
 
-Columbia Valley Gardens is more than just flowers. It's an experience of textures —  rough bark against smooth stone, soft petals brushing your hand, the cool dampness of the Japanese Garden pond. The path isn't always clear, so wander a bit. The rose garden is beautiful in spring, but the real surprise might be a hidden gazebo or a patch of ferns catching sunlight.
+## Columbia Valley Gardens
 
-Once you've walked through the gardens, head towards the lake. There are benches with views, and you can get a sense of how the whole garden fits into the landscape. The Insta360 X5 captured some good slow-motion shots here, as the light filtering through the trees makes interesting patterns on the water.
+The gardens are mostly about texture: bark, stone, the pond in the Japanese Garden. Paths aren't well marked in places, so plan on wandering. The rose garden gets all the attention in spring but the fern beds hold up better on a gray day.
 
-Continue along the lakefront path. You'll see families picnicking, couples taking walks, and maybe even a fisherman casting a line. This section is good for still shots; try to capture the reflections of the gardens in the water.
+Walk out toward the lake when you're done. There are benches with views back across the whole garden. I shot slow motion here with the X5 and the light coming through the trees onto the water gave me the best footage of the morning.
 
-The lakefront path leads you back towards the main gardens, but it's worth taking a detour onto East Kessler Boulevard for a few minutes. The houses here are mostly from the mid-20th century, with tidy lawns and interesting landscaping.
+From there take the lakefront path. Families picnicking, people walking, usually somebody fishing. Good for stills. The reflections are the shot.
+
+The path loops back toward the gardens, but detour onto East Kessler Boulevard first. Mostly mid-century houses, tidy lawns, some interesting landscaping.
 
 ## Getting There
-From downtown Longview: South on Louisiana Street to Northeast Nichols Boulevard. Continue onto Northwest Nichols Boulevard, then turn left onto 18th Avenue to reach Columbia Valley Gardens.
-There's a large parking lot at the entrance. No fee.   
 
+From downtown Longview: south on Louisiana Street to Northeast Nichols Boulevard, continue onto Northwest Nichols, then left on 18th Avenue for Columbia Valley Gardens. Big parking lot at the entrance, no fee.

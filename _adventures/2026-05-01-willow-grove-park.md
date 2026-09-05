@@ -9,26 +9,26 @@ video_id: "6NR0zCypxsM"
 excerpt: "A drive through rolling hills and farmland to reach the peaceful trails of Willow Grove Park."
 ---
 
-The route from Longview doesn't offer big vistas or mountain passes. There are no roadside attractions in the traditional sense. What it has is a gentle rise through farms, fields, and pockets of old-growth forest along quiet backroads. 
+The route from Longview doesn't offer big vistas or mountain passes. There are no roadside attractions in the traditional sense. What it has is a gentle rise through farms, fields, and pockets of old-growth forest along quiet backroads.
 
 ## Starting Your Adventure in Cowlitz County
 
-Longview itself is a small town centered around its historic downtown. The buildings are mostly brick and wood, with storefronts that have been there for decades. There's a coffee shop on Allen Street that serves decent pastries—a good place to fuel up before you head out.
+Longview is a small town built around a historic downtown, mostly brick and wood storefronts that have been there for decades. There's a coffee shop on Allen Street with decent pastries. Fuel up there before you head out.
 
 ## A Scenic Journey on Willow Grove Road
 
-Willow Grove Road itself is a narrow two-lane road, mostly paved but with some gravel sections. There are a few houses along the way, often set back from the road with mature trees in front. The speed limit is around 35 mph, which gives you time to take it all in.
+Willow Grove Road is a narrow two-lane, mostly paved with some gravel sections. A few houses along the way, usually set back behind mature trees. Speed limit runs around 35, which is about right for looking around.
 
 ## Reaching Willow Grove Park
 
-Willow Grove Park sits on a gentle rise overlooking the surrounding farmland. There are picnic tables scattered throughout the park, as well as a couple of shelters that can be reserved for groups. The trails themselves wind through second-growth Douglas fir and western hemlock, with glimpses of water in some sections.
+The park sits on a rise overlooking farmland. Picnic tables scattered throughout, plus a couple of reservable shelters. The trails wind through second-growth Douglas fir and western hemlock with glimpses of water in a few spots.
 
 ## Notes on Filming
 
-The light window here is narrow, especially later in the morning. The best time to film is probably between 8 and 10 am when there's still some diffused light coming through the canopy.
+The light window is narrow, especially later in the morning. Between 8 and 10 is best, while there's still diffused light coming through the canopy.
 
-I used an Insta360 X5 for the moving shots along the roads, and a Fujifilm X-T2 for stills of the park itself. The X5's FlowState stabilization handled the bumpy gravel sections without issue, and the X-T2's dynamic range was great for capturing the contrast between the shaded trails and the brighter open areas.
+I used the Insta360 X5 for moving shots on the road and the Fujifilm X-T2 for stills in the park. FlowState handled the gravel without complaint. The X-T2 did the harder job, holding detail between the shaded trail and the open field behind it.
 
 ## Getting There
 
-From downtown Longview: head east on Allen Street, then south onto Willow Grove Road. The parking area is about 3 miles in on your left. No fee. 
+From downtown Longview: east on Allen Street, then south onto Willow Grove Road. Parking area is about 3 miles in on your left. No fee.

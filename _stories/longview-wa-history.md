@@ -4,33 +4,33 @@ topic: "Local History"
 location: "Longview, WA"
 date: 2026-04-28
 image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80"
-excerpt: "Longview is one of the few cities in the United States that was fully planned before a single building went up. Understanding that history explains a lot about how it looks today."
+excerpt: "Longview is one of the few American cities that was fully planned before anyone put up a building. That explains most of what you notice driving through it."
 ---
 
-Longview is one of the few cities in the United States that was designed from scratch. In 1922, R.A. Long — a Kansas City lumber magnate — commissioned a complete city plan for a site at the confluence of the Cowlitz and Columbia rivers. He brought in the Hegemann and Peets planning firm, paid for it himself, and built it as a company town for his Long-Bell Lumber Company operations.
+Longview is one of a handful of American cities designed from scratch. In 1922 R.A. Long, a Kansas City lumber magnate, paid for a complete city plan for a site at the confluence of the Cowlitz and the Columbia. He hired the Hegemann and Peets planning firm, covered the cost himself, and built the place as a company town for Long-Bell Lumber.
 
-The plan was comprehensive: a street grid, parks integrated from the beginning, an industrial waterfront separated from residential areas by a buffer zone, a hotel, schools, and a civic center. Most of it was built within five years. The Monticello Hotel — still standing on Commerce Avenue — opened in 1923. Lake Sacajawea was created as part of the original park system, not added later.
+The plan covered everything: street grid, parks built in from the start, an industrial waterfront buffered from the residential areas, a hotel, schools, a civic center. Most of it went up inside five years. The Monticello Hotel on Commerce Avenue opened in 1923 and is still there. Lake Sacajawea was part of the original park system, not something added later.
 
 ## What Planned Design Looks Like on the Ground
 
-If you drive Longview without knowing its history, you notice that it doesn't feel like most Northwest cities. The streets are wide and on a grid. The parks are large and placed centrally, not as afterthoughts. The residential neighborhoods west of the lake have a consistent scale — single-family houses on regular lots, set back uniformly from the street.
+Drive Longview without knowing any of this and it just feels off compared to other Northwest towns. The streets are too wide. The parks are too big and too central. The neighborhoods west of the lake have a consistency you don't get from incremental development: single-family houses on regular lots, all set back the same distance from the street.
 
-That consistency is not coincidence. It's the product of a single coherent plan executed over a short period by a single owner. Long controlled the land, so there were no competing subdivision interests to negotiate around.
+None of that is accident. It's one plan, executed fast, by one owner who controlled the land and had nobody to negotiate with.
 
 ## The Industrial Legacy
 
-Long-Bell's mill complex on the waterfront operated for decades and shaped the regional economy. The timber industry declined through the latter half of the 20th century — the mill complex is gone now — but the infrastructure it required is still visible. The port facilities, the rail lines through the industrial district, and the wide roads that connected the mill to the rest of the city are all still there.
+Long-Bell's mill complex on the waterfront ran for decades and set the shape of the regional economy. Timber declined through the back half of the 20th century and the mill complex is gone, but the infrastructure it needed is still sitting there. Port facilities, rail through the industrial district, the wide roads that fed the mill.
 
-The industrial corridor along the Columbia south of downtown tells that story more clearly than anything else in Longview. The scale of the facilities — the waterfront, the port — reflects what was once one of the largest lumber operations on the West Coast.
+The industrial corridor along the Columbia south of downtown is where you see it most plainly. The scale of what's down there is a leftover from one of the largest lumber operations on the West Coast.
 
 ## Longview Today
 
-The city's population has stayed relatively stable since the 1980s. The timber economy that built it has contracted significantly, replaced partially by other industrial operations. The original residential neighborhoods — particularly the Westside and the streets around Lake Sacajawea — are well-maintained and still recognizable from the 1920s plans.
+Population has been roughly flat since the 1980s. The timber economy that built the city has contracted a lot, partly replaced by other industry. The original neighborhoods, especially the Westside and the streets around the lake, are still recognizable from the 1920s drawings.
 
-The parks system is the most visible legacy of the original planning. Lake Sacajawea, Willow Grove Park, and R.A. Long Park are all functioning public spaces that have been in continuous use since the city was built. For a planned city from the 1920s, that continuity is unusual.
+The parks are the most visible piece of the original plan that survived intact. Lake Sacajawea, Willow Grove Park, and R.A. Long Park have all been in continuous public use since the city was built. That kind of continuity from a 1920s planned city is not common.
 
 ## Further Reading
 
-- *Longview: The Planned City* — a local history available at the Longview Public Library
+- *Longview: The Planned City*, a local history available at the Longview Public Library
 - The Long-Bell archives at Washington State University
-- WSDOT historical maps of the Lower Columbia road network, 1920–1950
+- WSDOT historical maps of the Lower Columbia road network, 1920 to 1950

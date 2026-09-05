@@ -4,46 +4,44 @@ topic: "Environmental"
 location: "Cowlitz County, WA"
 date: 2026-02-14
 image: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80"
-excerpt: "The Cowlitz River system is monitored by a network of agencies, tribes, and volunteers. What they watch for, and what the numbers say about where the watershed is heading."
+excerpt: "The Cowlitz is watched by agencies, the tribe, and a lot of volunteers with thermometers. Here's what they measure and why."
 ---
 
-The Cowlitz River drains roughly 2,500 square miles of southwestern Washington, from the flanks of Mount Rainier and Mount St. Helens down through Lewis and Cowlitz counties to its confluence with the Columbia at Kelso. That drainage includes active volcanic terrain, managed timber land, agricultural areas, and a substantial urban footprint. The river carries all of it.
+The Cowlitz drains roughly 2,500 square miles of southwestern Washington, off the flanks of Rainier and St. Helens, down through Lewis and Cowlitz counties, into the Columbia at Kelso. Active volcanic terrain, managed timber land, farms, and a decent-sized urban footprint all sit in that drainage. The river carries whatever comes off all of it.
 
-Monitoring a watershed this complex requires coordination between multiple agencies. The primary players in the Cowlitz are the Washington Department of Ecology, the Cowlitz Indian Tribe, Tacoma Power (which operates two hydroelectric dams on the upper river), and a network of volunteer monitoring groups operating under the Washington Volunteer Water Quality Monitoring Program.
+Monitoring something that complicated takes more than one agency. In the Cowlitz the main players are the Washington Department of Ecology, the Cowlitz Indian Tribe, Tacoma Power (which runs two hydroelectric dams upriver), and a network of volunteers working under the state's Volunteer Water Quality Monitoring Program.
 
 ## What Gets Measured
 
-The core parameters in the Cowlitz monitoring network are:
+Water temperature comes first, because it determines habitat quality for salmon and steelhead at every life stage. The upper Cowlitz runs cold. The lower river in summer low flow can get warm enough to stress returning adults. Riffe Lake, the reservoir behind Riffe Dam, acts as a thermal sink and affects what happens downstream of it.
 
-**Water temperature.** Temperature determines habitat quality for salmon and steelhead, which are temperature-sensitive at all life stages. The upper Cowlitz runs cold; the lower river, particularly in summer low-flow conditions, can reach temperatures that stress returning adult salmon. Riffe Lake, the reservoir behind Riffe Dam, acts as a thermal sink that affects downstream temperatures.
+Turbidity and sediment load matter next. The Cowlitz moves a lot of suspended sediment, especially after rain and during snowmelt, and that affects spawning gravel quality and whether redds survive. The 1980 eruption loaded the upper drainage with sediment on a scale that's still working its way through the system. Monitoring since then has tracked the recovery, which has been slow.
 
-**Turbidity and sediment load.** The Cowlitz carries significant suspended sediment, especially following rain events and during snowmelt. Sediment levels affect spawning gravel quality and the viability of redds (salmon nests). The 1980 Mount St. Helens eruption dramatically increased sediment loads in the upper drainage; monitoring since then has tracked the gradual recovery.
+pH and conductivity are the basic chemistry indicators. They flag agricultural runoff, septic impact, and industrial discharge. Down on the valley floor near the farms, conductivity spikes periodically after irrigation.
 
-**pH and conductivity.** These basic chemistry parameters serve as indicators of agricultural runoff, septic system impact, and industrial discharge. The lower Cowlitz, near the agricultural areas of the valley floor, shows periodic conductivity spikes following irrigation events.
-
-**Flow rate.** Discharge monitoring tells you how much water the river is moving at any given time. Flow affects all the other parameters — low-flow summer conditions concentrate pollutants and raise temperatures; high-flow winter events mobilize sediment and can stress spawning areas.
+Flow rate ties everything together. Discharge tells you how much water is moving, and flow drives the other numbers. Low summer flow concentrates pollutants and pushes temperatures up. High winter flow mobilizes sediment and can tear up spawning areas.
 
 ## The Salmon Picture
 
-Coho, Chinook, and steelhead all return to the Cowlitz. The runs have been depleted compared to historical levels — dam construction in the mid-20th century blocked access to a significant portion of the upper watershed until fish passage facilities were built. Current populations are considered recovering.
+Coho, Chinook, and steelhead all return to the Cowlitz. The runs are well down from historical levels. Dam construction in the mid-20th century cut off a large share of the upper watershed until fish passage facilities went in. Current populations are considered to be recovering, which is a word doing a lot of work.
 
-The Cowlitz Indian Tribe operates a salmon hatchery on the river and participates actively in monitoring and habitat restoration. Their monitoring data is some of the most granular available for the lower river sections.
+The Cowlitz Indian Tribe runs a hatchery on the river and does a lot of the monitoring and habitat restoration work. Their data on the lower river sections is the most granular anyone has.
 
 ## What Volunteers Do
 
-The Washington Volunteer Water Quality Monitoring Program trains and deploys citizen scientists to monitor specific sites on a scheduled basis — typically monthly, more frequently during high-flow events. Volunteers collect water samples, measure temperature and turbidity in the field, and report to the Department of Ecology database.
+The state's volunteer program trains people to monitor assigned sites on a schedule, usually monthly and more often during high-flow events. Volunteers pull water samples, measure temperature and turbidity in the field, and report into the Ecology database.
 
-The data from volunteer sites fills gaps that agency monitoring can't cover due to budget and staffing constraints. For a river with as many tributaries as the Cowlitz, volunteer monitoring is not supplemental — it's essential.
+That volunteer data fills gaps agency monitoring can't reach on the budget and staffing available. On a river with as many tributaries as this one, the volunteer network isn't a nice-to-have. Without it there would be large parts of the system nobody is looking at.
 
-If you spend time on the Cowlitz or its tributaries, the volunteer program is worth looking into. The training is minimal, the time commitment is manageable, and the data you contribute goes into a public database that researchers and agencies actually use.
+If you spend time on the Cowlitz, it's worth looking into. Training is minimal, the time commitment is manageable, and the numbers go into a public database that researchers actually pull from.
 
 ## Current Conditions
 
-Water quality data for the Cowlitz is publicly available through the Washington Department of Ecology's Environmental Information Management (EIM) system at ecology.wa.gov. Temperature monitoring stations are visible in real time through the USGS Water Resources monitoring network — the gauge at Castle Rock reports in real time and is the most useful single reference point for lower Cowlitz conditions.
+Water quality data is public through Ecology's Environmental Information Management system at ecology.wa.gov. For real-time numbers, the USGS gauge at Castle Rock (site 14243000) is the single most useful reference point for lower Cowlitz conditions.
 
 ## Further Reading
 
 - Washington Department of Ecology Cowlitz River Basin Assessment
 - USGS Water Resources: Cowlitz River at Castle Rock, WA (site 14243000)
-- Cowlitz Indian Tribe Natural Resources Department — public reports available on request
-- Washington Volunteer Water Quality Monitoring Program — ecology.wa.gov
+- Cowlitz Indian Tribe Natural Resources Department, public reports on request
+- Washington Volunteer Water Quality Monitoring Program at ecology.wa.gov
