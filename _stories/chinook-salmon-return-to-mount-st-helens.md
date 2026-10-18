@@ -1,11 +1,8 @@
 ---
-layout: post
 title: "Welcome Home: Chinook Salmon Return to Mount St. Helens for the First Time Since 1980"
 date: 2026-10-17 09:00:00 -0700
-last_checked: 2026-10-17
-categories: [pnw-news, good-news]
+topic: wildlife
 tags: [mount-st-helens, toutle-river, chinook-salmon, cowlitz-indian-tribe, wdfw, salmon-recovery, cowlitz-county, columbia-river]
-description: "In June 2026, spring Chinook salmon swam in the upper North Fork Toutle River at Mount St. Helens for the first time since the 1980 eruption. Here's how they got there."
 excerpt: "Forty-six years after the eruption, Chinook salmon are back in the creeks below Mount St. Helens, carried there by hand."
 image: https://images.unsplash.com/photo-1776707574872-232f3db25a1e?auto=format&fit=crop&w=1200&q=80
 ---
@@ -43,15 +40,13 @@ For the Cowlitz Indian Tribe, the release meant more than a fisheries milestone.
 
 ## Why it matters around here
 
-The Toutle runs into the Cowlitz, and the Cowlitz meets the Columbia at Longview and Kelso. That's the same river system we drive along on [our Stella backroads trip]({% post_url 2026-10-17-stella-backroads-loop-coal-creek-to-stella %}). Salmon from these headwaters will pass through our part of the river on their way to the ocean and back.
+The Toutle runs into the Cowlitz, and the Cowlitz meets the Columbia at Longview and Kelso. That's the same river system we drive along on [our Stella backroads trip]({{ '/adventures/2026-10-18-longview-to-stella/' | relative_url }}). Salmon from these headwaters will pass through our part of the river on their way to the ocean and back.
 
 ## Want to see the area?
 
 Mount St. Helens National Volcanic Monument is managed by the U.S. Forest Service. Check current road status, seasonal closures, and pass requirements with the Forest Service and [WSDOT](https://wsdot.com/travel/real-time/map/) before you go. Watch the fish from public viewing areas, and leave spawning salmon alone.
 
 ## Sources
-
-*Accessed October 17, 2026.*
 
 - Gorge News Center (republishing the WDFW release), [WDFW, Cowlitz Indian Tribe, and U.S. Forest Service celebrate first Chinook salmon reintroduction to Mount St. Helens area since 1980 eruption](https://gorgenewscenter.com/2026/07/29/wdfw-cowlitz-indian-tribe-and-u-s-forest-service-celebrate-first-chinook-salmon-reintroduction-to-mount-st-helens-area-since-1980-eruption) (July 29, 2026)
 - Shari Phiel, The Columbian, [Salmon swim above Toutle River retention dam for first time since 1980](https://columbian.com/news/2026/jun/13/salmon-swim-above-toutle-river-retention-dam-for-first-time-since-1980) (June 13, 2026)

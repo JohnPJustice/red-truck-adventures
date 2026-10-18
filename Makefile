@@ -20,8 +20,8 @@ install:
 
 # ── Serve locally with live reload ───────────────────────────────────────────
 serve:
-	$(JEKYLL) serve --baseurl "" --livereload --future
-
+	$(JEKYLL) serve --baseurl "" --livereload
+	
 # ── Build to _site/ (production) ─────────────────────────────────────────────
 build:
 	JEKYLL_ENV=production $(JEKYLL) build
