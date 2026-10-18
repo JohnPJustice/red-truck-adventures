@@ -1,7 +1,7 @@
 ---
 title: "Stella Backroads Loop: Coal Creek to Stella on the Lower Columbia"
 location: "Coal Creek, WA to Stella, WA"
-date: 2026-10-18 08:00:00 -0700
+date: 2026-10-17 08:00:00 -0700
 category: day-trip
 video_id: "mLw95uSqzZg"
 tags: [cowlitz-county, stella, eufaula, coal-creek, state-route-4, columbia-river, logging-history, back-roads]
