@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "Stella Backroads Loop: Coal Creek to Stella on the Lower Columbia"
+location: "Coal Creek, WA to Stella, WA"
 date: 2026-10-18 08:00:00 -0700
 travel_date: 2026-10-18
 last_checked: 2026-10-10
 category: day-trip
+video_id: "mLw95uSqzZg"
 tags: [cowlitz-county, stella, eufaula, coal-creek, state-route-4, columbia-river, logging-history, back-roads]
 description: "A 15.8 km (9.8 mi) back-road drive from Coal Creek through Eufaula and up Fall Creek to Stella, WA, home of a 1907 blacksmith shop on the National Register."
 excerpt: "Back roads from Coal Creek to Stella: logging history, a pioneer cemetery, salmon creeks, and a 1907 blacksmith shop on the Columbia."
@@ -12,12 +13,6 @@ image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?auto=format
 ---
 
 You can drive from Longview to Stella on Washington State Route 4 in a few minutes. This trip takes the slow way instead. It's a 15.8 km (9.8 mi) run on back roads through Coal Creek and Eufaula, up Fall Creek Road, and down Germany Creek to the Columbia River. It ends at the best-preserved building left from Stella's logging boom.
-
-## Watch the video
-
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/mLw95uSqzZg" title="Stella Backroads Loop" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ## Route at a glance
 
