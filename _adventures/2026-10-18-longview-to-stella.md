@@ -2,12 +2,9 @@
 title: "Stella Backroads Loop: Coal Creek to Stella on the Lower Columbia"
 location: "Coal Creek, WA to Stella, WA"
 date: 2026-10-18 08:00:00 -0700
-travel_date: 2026-10-18
-last_checked: 2026-10-10
 category: day-trip
 video_id: "mLw95uSqzZg"
 tags: [cowlitz-county, stella, eufaula, coal-creek, state-route-4, columbia-river, logging-history, back-roads]
-description: "A 15.8 km (9.8 mi) back-road drive from Coal Creek through Eufaula and up Fall Creek to Stella, WA, home of a 1907 blacksmith shop on the National Register."
 excerpt: "Back roads from Coal Creek to Stella: logging history, a pioneer cemetery, salmon creeks, and a 1907 blacksmith shop on the Columbia."
 image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?auto=format&fit=crop&w=1200&q=80"
 ---
@@ -82,8 +79,6 @@ The building survived because local people saved it. Clifford and Pearl Burr and
 
 ## Sources
 
-*Accessed October 10, 2026.*
-
 - National Park Service, [Stella Blacksmith Shop NRHP Nomination Form](https://npgallery.nps.gov/GetAsset/28b372f0-b969-431e-ad26-3b460495ef3c) (1985)
 - Stella Historical Society, [About the Society](https://www.stellahistoricalmuseum.com/about-shs)
 - Digital Public Library of America, [Rigging a spartree, Eufaula Company, c. 1921](https://dp.la/item/4f6805198c2d6fc78d66815c98972baa)
@@ -94,4 +89,4 @@ The building survived because local people saved it. Clifford and Pearl Burr and
 - PNAMP, [Lower Columbia IMW Fact Sheet](https://pnamp.org/wp-content/uploads/2024/08/Lower-Columbia-IMW-Accomplishment-Fact-Sheet-2017.pdf)
 - Route data: OpenStreetMap / OSRM
 
-*Information was checked on October 10, 2026. Hours, access, and road conditions can change, so confirm them before your trip.*
+

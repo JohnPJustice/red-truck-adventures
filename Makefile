@@ -20,7 +20,7 @@ install:
 
 # ── Serve locally with live reload ───────────────────────────────────────────
 serve:
-	$(JEKYLL) serve --baseurl "" --livereload
+	$(JEKYLL) serve --baseurl "" --livereload --future
 
 # ── Build to _site/ (production) ─────────────────────────────────────────────
 build:
