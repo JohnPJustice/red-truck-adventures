@@ -1,6 +1,7 @@
 ---
 title: "Welcome Home: Chinook Salmon Return to Mount St. Helens for the First Time Since 1980"
 date: 2026-10-17 09:00:00 -0700
+location: "Columbia River, WA"
 topic: wildlife
 tags: [mount-st-helens, toutle-river, chinook-salmon, cowlitz-indian-tribe, wdfw, salmon-recovery, cowlitz-county, columbia-river]
 excerpt: "Forty-six years after the eruption, Chinook salmon are back in the creeks below Mount St. Helens, carried there by hand."
