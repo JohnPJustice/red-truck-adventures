@@ -1,0 +1,76 @@
+---
+layout: default
+title: Affiliate Links
+permalink: /affiliates/
+description: "The gear Red Truck Adventures actually uses, with affiliate links that help support the channel."
+
+# Add links under a category (or add a new category).
+#   name:        Product name (required)
+#   description: How you use it
+#   url:         Affiliate link (leave blank to show "Link coming soon")
+#   retailer:    Store name for the button, e.g. "Amazon" (defaults to "Shop")
+affiliate_groups:
+  - category: Truck Parts
+    items:
+      - name: EVIL ENERGY 300 ML AN10 PCV Oil Catch Can Kit
+        description: "Helps prevent oil from contaminating the intake system."
+        url: "https://tidd.ly/4kTNWAq"
+        retailer: "Evil Energy"
+      - name: EVIL ENERGY Overflow Tank Coolant Radiator Tank Reservoir Expansion Universal Aluminum 1L/2L
+        description: "High-performance overflow tank for the truck's cooling system."
+        url: "https://tidd.ly/4iKdBu3"
+        retailer: "Evil Energy"
+---
+
+<section class="page-hero">
+  <img class="page-hero__bg"
+       src="https://images.unsplash.com/photo-1758873263428-f4b2edb45fe1?auto=format&fit=crop&w=1600&q=80"
+       loading="lazy">
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">Support the Channel</span>
+      <h1>Affiliate Links</h1>
+      <p>The gear and parts we actually use on the road and in the garage.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div style="background:#F2EDE4; border-left:3px solid #8C3030; padding:1rem 1.5rem; border-radius:0 8px 8px 0; margin-bottom:3rem; max-width:680px;">
+      <p style="margin:0; font-size:0.9rem; color:#6B6560;">
+        <strong style="color:#2C2E30;">Disclosure:</strong>
+        Some links on this page are affiliate links. If you buy through them, Red Truck Adventures may earn a small commission at no extra cost to you. We only list gear we use.
+      </p>
+    </div>
+
+    {% for group in page.affiliate_groups %}
+    <div class="category-heading" style="margin-bottom:1.5rem;">
+      <h3>{{ group.category }}</h3>
+    </div>
+    <div class="grid grid--3" style="margin-bottom:4rem;">
+      {% for item in group.items %}
+      <div class="product-card">
+        <div class="product-card__body">
+          <span class="product-card__tag">{{ group.category }}</span>
+          <h3 class="product-card__title">{{ item.name }}</h3>
+          {% if item.description %}<p class="product-card__description">{{ item.description }}</p>{% endif %}
+          <div class="product-card__footer">
+            {% if item.url and item.url != "" %}
+            <a href="{{ item.url }}"
+               target="_blank" rel="sponsored noopener noreferrer"
+               class="btn btn--primary btn--sm">{% if item.retailer and item.retailer != "" %}Shop on {{ item.retailer }}{% else %}Shop{% endif %} →</a>
+            {% else %}
+            <span style="font-size:0.85rem; color:#A89880; font-style:italic;">Link coming soon</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
