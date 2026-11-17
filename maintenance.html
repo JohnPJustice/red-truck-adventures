@@ -3,20 +3,23 @@ layout: default
 title: Maintenance
 description: "Maintenance videos from Red Truck Adventures: service, repairs, and upgrades on the red truck and the Jeep Gladiator project."
 
-# Add videos under the matching vehicle. Newest videos are shown first.
-#   title:       Video title (required)
-#   video_id:    YouTube video ID, e.g. "mLw95uSqzZg" (required)
-#   date:        YYYY-MM-DD
-#   description: One or two sentences about the job
+# Add a subpage per job as a .md file in _maintenance/ (like _adventures/), e.g.
+# _maintenance/2026-05-01-oil-change.md with front matter:
+#   title:        Page title (required)
+#   vehicle:      red-truck or jeep-gladiator (required, matches an id below)
+#   date:         YYYY-MM-DD
+#   video_id:     YouTube video ID (optional)
+#   image:        Hero image URL (optional)
+#   excerpt:      One or two sentences shown on this page's cards
+#   tags:         [oil, service]
+# Newest pages are shown first.
 vehicles:
   - id: red-truck
     name: The Red Truck
     description: "Keeping the namesake on the road: routine service, repairs, and upgrades."
-    videos: []
   - id: jeep-gladiator
     name: Jeep Gladiator Project
     description: "The new build: modifications, installs, and upkeep on the Gladiator."
-    videos: []
 ---
 
 <section class="page-hero">
@@ -43,32 +46,36 @@ vehicles:
     </div>
     <p style="color:#6B6560; margin-bottom:1.5rem;">{{ vehicle.description }}</p>
 
-    {% if vehicle.videos and vehicle.videos.size > 0 %}
+    {% assign entries = "" | split: "" %}
+    {% if site.maintenance %}
+      {% assign entries = site.maintenance | where: "vehicle", vehicle.id | sort: "date" | reverse %}
+    {% endif %}
+    {% if entries.size > 0 %}
     <div class="grid grid--3" style="margin-bottom:4rem;">
-      {% assign videos = vehicle.videos | sort: "date" | reverse %}
-      {% for video in videos %}
+      {% for entry in entries %}
       <article class="card">
-        <div class="video-embed" style="border-radius:0;">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/{{ video.video_id }}?rel=0&modestbranding=1"
-            title="{{ video.title }} | Red Truck Adventures"
-            sandbox="allow-scripts allow-same-origin allow-presentation"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
+        {% if entry.image %}
+        <a href="{{ entry.url | prepend: site.baseurl }}" tabindex="-1" aria-hidden="true">
+          <div class="img-container img-container--3x2">
+            <img src="{{ entry.image }}" alt="{{ entry.title }}" loading="lazy">
+          </div>
+        </a>
+        {% endif %}
         <div class="card__body">
-          <h2 class="card__title">{{ video.title }}</h2>
-          {% if video.date %}
-          <div class="card__meta"><span>{{ video.date | date: "%B %d, %Y" }}</span></div>
+          <h2 class="card__title">
+            <a href="{{ entry.url | prepend: site.baseurl }}">{{ entry.title }}</a>
+          </h2>
+          {% if entry.date %}
+          <div class="card__meta"><span>{{ entry.date | date: "%B %d, %Y" }}</span></div>
           {% endif %}
-          {% if video.description %}<p class="card__excerpt">{{ video.description }}</p>{% endif %}
+          {% if entry.excerpt %}<p class="card__excerpt">{{ entry.excerpt }}</p>{% endif %}
+          <a href="{{ entry.url | prepend: site.baseurl }}" class="btn btn--outline-dark btn--sm">{% if entry.video_id %}Watch &amp; Read{% else %}Read{% endif %} →</a>
         </div>
       </article>
       {% endfor %}
     </div>
     {% else %}
-    <p style="color:#A89880; font-style:italic; margin-bottom:4rem;">Videos coming soon.</p>
+    <p style="color:#A89880; font-style:italic; margin-bottom:4rem;">Coming soon.</p>
     {% endif %}
 
     {% endfor %}

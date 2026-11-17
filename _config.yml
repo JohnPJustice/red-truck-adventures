@@ -49,6 +49,9 @@ collections:
   gear:
     output: true
     permalink: /gear/:name/
+  maintenance:
+    output: true
+    permalink: /maintenance/:name/
   stories:
     output: true
     permalink: /stories/:name/
@@ -65,6 +68,11 @@ defaults:
       type: gear
     values:
       layout: gear
+  - scope:
+      path: ""
+      type: maintenance
+    values:
+      layout: maintenance
   - scope:
       path: ""
       type: stories

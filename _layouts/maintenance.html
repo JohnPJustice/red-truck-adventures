@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<section class="page-hero">
+  {% if page.image %}
+  <img class="page-hero__bg"
+       src="{{ page.image }}"
+       alt="{{ page.title }}"
+       loading="lazy">
+  {% endif %}
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">{{ page.vehicle_name | default: "Maintenance" }}</span>
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}<p>{{ page.excerpt }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container--narrow">
+
+    <div style="display:flex; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:2rem;">
+      {% if page.date %}<span style="font-size:0.8rem; color:#A89880;">{{ page.date | date: "%B %d, %Y" }}</span>{% endif %}
+      {% for tag in page.tags %}
+      <span class="badge">{{ tag }}</span>
+      {% endfor %}
+    </div>
+
+    {% if page.video_id %}
+    <div class="video-embed" style="margin-bottom:3rem;">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ page.video_id }}?rel=0&modestbranding=1"
+        title="{{ page.title }} | Red Truck Adventures"
+        sandbox="allow-scripts allow-same-origin allow-presentation"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+    {% endif %}
+
+    <div class="article-body">
+      {{ content }}
+    </div>
+
+    <div style="margin-top:4rem; padding-top:2rem; border-top:1px solid #F2EDE4;">
+      <a href="{{ '/maintenance' | prepend: site.baseurl }}" class="btn btn--outline-dark">← All Maintenance</a>
+    </div>
+
+  </div>
+</section>

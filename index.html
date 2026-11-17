@@ -254,8 +254,11 @@ description: "Documenting real places, real drives, and real stories from the Pa
     <div class="grid grid--2">
       {% for vehicle in maintenance_page.vehicles %}
       <article class="card">
-        {% assign latest = vehicle.videos | sort: "date" | reverse | first %}
-        {% if latest %}
+        {% assign latest = nil %}
+        {% if site.maintenance %}
+          {% assign latest = site.maintenance | where: "vehicle", vehicle.id | sort: "date" | reverse | first %}
+        {% endif %}
+        {% if latest and latest.video_id %}
         <div class="video-embed" style="border-radius:0;">
           <iframe
             src="https://www.youtube-nocookie.com/embed/{{ latest.video_id }}?rel=0&modestbranding=1"
@@ -264,6 +267,10 @@ description: "Documenting real places, real drives, and real stories from the Pa
             allowfullscreen
             loading="lazy">
           </iframe>
+        </div>
+        {% elsif latest and latest.image %}
+        <div class="img-container img-container--3x2">
+          <img src="{{ latest.image }}" alt="{{ latest.title }}" loading="lazy">
         </div>
         {% else %}
         <div class="video-embed" style="border-radius:0; display:flex; align-items:center; justify-content:center;">
@@ -279,14 +286,14 @@ description: "Documenting real places, real drives, and real stories from the Pa
             <a href="{{ '/maintenance/' | prepend: site.baseurl }}#{{ vehicle.id }}">{% if latest %}{{ latest.title }}{% else %}{{ vehicle.name }}{% endif %}</a>
           </h3>
           {% if latest and latest.date %}<div class="card__meta"><span>{{ latest.date | date: "%B %d, %Y" }}</span></div>{% endif %}
-          <p class="card__excerpt">{% if latest and latest.description %}{{ latest.description }}{% else %}{{ vehicle.description }}{% endif %}</p>
+                      <p class="card__excerpt">{% if latest and latest.excerpt %}{{ latest.excerpt }}{% else %}{{ vehicle.description }}{% endif %}</p>
         </div>
       </article>
       {% endfor %}
     </div>
 
     <div class="text-center mt-xl">
-      <a href="{{ '/maintenance/' | prepend: site.baseurl }}" class="btn btn--outline-dark">All Maintenance Videos →</a>
+      <a href="{{ '/maintenance/' | prepend: site.baseurl }}" class="btn btn--outline-dark">All Maintenance →</a>
     </div>
   </div>
 </section>
