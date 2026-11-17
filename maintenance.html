@@ -1,0 +1,77 @@
+---
+layout: default
+title: Maintenance
+description: "Maintenance videos from Red Truck Adventures: service, repairs, and upgrades on the red truck and the Jeep Gladiator project."
+
+# Add videos under the matching vehicle. Newest videos are shown first.
+#   title:       Video title (required)
+#   video_id:    YouTube video ID, e.g. "mLw95uSqzZg" (required)
+#   date:        YYYY-MM-DD
+#   description: One or two sentences about the job
+vehicles:
+  - id: red-truck
+    name: The Red Truck
+    description: "Keeping the namesake on the road: routine service, repairs, and upgrades."
+    videos: []
+  - id: jeep-gladiator
+    name: Jeep Gladiator Project
+    description: "The new build: modifications, installs, and upkeep on the Gladiator."
+    videos: []
+---
+
+<section class="page-hero">
+  <img class="page-hero__bg"
+       src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80"
+       alt="Mechanic's tools laid out in a garage"
+       loading="lazy">
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content">
+      <span class="page-hero__label">In the Garage</span>
+      <h1>Maintenance</h1>
+      <p>The work that keeps the trips happening. Service, repairs, and builds on the red truck and the Jeep Gladiator.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    {% for vehicle in page.vehicles %}
+    <div id="{{ vehicle.id }}" class="category-heading" style="margin-bottom:0.5rem;">
+      <h3>{{ vehicle.name }}</h3>
+    </div>
+    <p style="color:#6B6560; margin-bottom:1.5rem;">{{ vehicle.description }}</p>
+
+    {% if vehicle.videos and vehicle.videos.size > 0 %}
+    <div class="grid grid--3" style="margin-bottom:4rem;">
+      {% assign videos = vehicle.videos | sort: "date" | reverse %}
+      {% for video in videos %}
+      <article class="card">
+        <div class="video-embed" style="border-radius:0;">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/{{ video.video_id }}?rel=0&modestbranding=1"
+            title="{{ video.title }} | Red Truck Adventures"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">{{ video.title }}</h2>
+          {% if video.date %}
+          <div class="card__meta"><span>{{ video.date | date: "%B %d, %Y" }}</span></div>
+          {% endif %}
+          {% if video.description %}<p class="card__excerpt">{{ video.description }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="color:#A89880; font-style:italic; margin-bottom:4rem;">Videos coming soon.</p>
+    {% endif %}
+
+    {% endfor %}
+
+  </div>
+</section>

@@ -1,10 +1,13 @@
+// ─── Nav collapse (full link list needs more width than the grid breakpoint) ──
+@media (max-width: #{$bp-xl}) {
+  .nav__links     { display: none; }
+  .nav__hamburger { display: flex; }
+}
+
 // ─── Tablet ───────────────────────────────────────────────────────────────────
 @media (max-width: #{$bp-lg}) {
   .grid--3 { grid-template-columns: repeat(2, 1fr); }
   .grid--4 { grid-template-columns: repeat(2, 1fr); }
-
-  .nav__links     { display: none; }
-  .nav__hamburger { display: flex; }
 
   .stats-bar { grid-template-columns: repeat(2, 1fr); }
 

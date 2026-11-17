@@ -48,6 +48,14 @@
            {% if page.url contains '/pnw-stories' or page.url contains '/stories/' %}class="active"{% endif %}>Stories</a>
       </li>
       <li class="nav__link">
+        <a href="{{ '/maintenance/' | prepend: site.baseurl }}"
+           {% if page.url contains '/maintenance' %}class="active"{% endif %}>Maintenance</a>
+      </li>
+      <li class="nav__link">
+        <a href="{{ '/affiliates/' | prepend: site.baseurl }}"
+           {% if page.url contains '/affiliates' %}class="active"{% endif %}>Affiliates</a>
+      </li>
+      <li class="nav__link">
         <a href="{{ '/about/' | prepend: site.baseurl }}"
            {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
       </li>
@@ -77,6 +85,8 @@
     {% if site.show_gear %}<a href="{{ '/gear-reviews/' | prepend: site.baseurl }}">Gear Reviews</a>{% endif %}
     {% if site.show_shop %}<a href="{{ '/shop/' | prepend: site.baseurl }}">Digital Shop</a>{% endif %}
     <a href="{{ '/pnw-stories/' | prepend: site.baseurl }}">PNW Stories</a>
+    <a href="{{ '/maintenance/' | prepend: site.baseurl }}">Maintenance</a>
+    <a href="{{ '/affiliates/' | prepend: site.baseurl }}">Affiliates</a>
     <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
     <a href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
   </nav>
