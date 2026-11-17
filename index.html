@@ -239,3 +239,86 @@ description: "Documenting real places, real drives, and real stories from the Pa
     </div>
   </div>
 </section>
+
+<!-- ── Maintenance Teaser ─────────────────────────────────────────────────────── -->
+{% assign maintenance_page = site.pages | where: "url", "/maintenance/" | first %}
+{% if maintenance_page %}
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">In the Garage</span>
+      <h2>Maintenance</h2>
+      <p>Service, repairs, and builds on the red truck and the Jeep Gladiator project.</p>
+    </div>
+
+    <div class="grid grid--2">
+      {% for vehicle in maintenance_page.vehicles %}
+      <article class="card">
+        {% assign latest = vehicle.videos | sort: "date" | reverse | first %}
+        {% if latest %}
+        <div class="video-embed" style="border-radius:0;">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/{{ latest.video_id }}?rel=0&modestbranding=1"
+            title="{{ latest.title }} | Red Truck Adventures"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        {% else %}
+        <div class="video-embed" style="border-radius:0; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center; color:rgba(255,255,255,0.4);">
+            <div style="font-size:2.5rem; margin-bottom:0.75rem;">▶</div>
+            <p style="margin:0; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase;">Videos Coming Soon</p>
+          </div>
+        </div>
+        {% endif %}
+        <div class="card__body">
+          <span class="card__label">{{ vehicle.name }}</span>
+          <h3 class="card__title">
+            <a href="{{ '/maintenance/' | prepend: site.baseurl }}#{{ vehicle.id }}">{% if latest %}{{ latest.title }}{% else %}{{ vehicle.name }}{% endif %}</a>
+          </h3>
+          {% if latest and latest.date %}<div class="card__meta"><span>{{ latest.date | date: "%B %d, %Y" }}</span></div>{% endif %}
+          <p class="card__excerpt">{% if latest and latest.description %}{{ latest.description }}{% else %}{{ vehicle.description }}{% endif %}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-xl">
+      <a href="{{ '/maintenance/' | prepend: site.baseurl }}" class="btn btn--outline-dark">All Maintenance Videos →</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ── Affiliates Teaser ──────────────────────────────────────────────────────── -->
+{% assign affiliates_page = site.pages | where: "url", "/affiliates/" | first %}
+{% if affiliates_page %}
+<section class="section section--forest">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div>
+        <span class="section-label" style="color:rgba(168,152,128,0.9);">Support the Channel</span>
+        <h2 style="color:#F2EDE4;">The gear we actually use</h2>
+        <p style="color:rgba(242,237,228,0.75); margin-bottom:1.5rem;">Cameras, audio, and truck gear from our trips and garage work. Buying through our affiliate links helps support the channel at no extra cost to you.</p>
+        <a href="{{ '/affiliates/' | prepend: site.baseurl }}" class="btn btn--primary">See All Affiliate Links →</a>
+      </div>
+      <div class="grid grid--2" style="gap:1rem;">
+        {% assign shown = 0 %}
+        {% for group in affiliates_page.affiliate_groups %}
+          {% for item in group.items %}
+            {% if shown < 4 %}
+            <div style="background:rgba(255,255,255,0.07); border-radius:8px; padding:1.25rem; border:1px solid rgba(255,255,255,0.09);">
+              <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.13em; text-transform:uppercase; color:#A89880; margin-bottom:0.5rem;">{{ group.category }}</div>
+              <div style="font-family:'Playfair Display',serif; color:#F2EDE4; font-size:0.95rem; line-height:1.35;">{{ item.name }}</div>
+            </div>
+            {% assign shown = shown | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
