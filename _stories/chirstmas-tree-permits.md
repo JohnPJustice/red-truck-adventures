@@ -1,13 +1,11 @@
 ---
-layout: post
 title: "Cut Your Own: 2026 Christmas Tree Permits Are Here for the Gifford Pinchot National Forest"
-date: 2026-11-17 09:00:00 -0800
-last_checked: 2026-11-17
-categories: [pnw-news, seasonal]
-tags: [gifford-pinchot-national-forest, christmas-tree-permit, mount-st-helens, mount-adams, cowlitz-valley, forest-roads, winter-driving, southwest-washington]
-description: "Gifford Pinchot National Forest Christmas tree permits are $5 for 2026. Here's where to buy one, what to bring, and how to plan for winter forest roads."
+topic: "Seasonal"
+location: "Cowlitz County, WA"
+date: 2026-11-17
+image: "https://images.unsplash.com/photo-1767523881986-f8b55d3c5880?auto=format&fit=crop&w=1200&q=80"
 excerpt: "Five dollars, a saw, and a good set of tire chains. Here's what you need to know about cutting your own tree in the Gifford Pinchot this year."
-image: https://images.unsplash.com/photo-1767523881986-f8b55d3c5880?auto=format&fit=crop&w=1200&q=80   # TODO: add a licensed image after review
+---
 ---
 
 Bringing home a Christmas tree from the national forest is a Pacific Northwest tradition. The Gifford Pinchot National Forest has its 2026 permits on sale now.
