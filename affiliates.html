@@ -4,22 +4,18 @@ title: Affiliate Links
 permalink: /affiliates/
 description: "The gear Red Truck Adventures actually uses, with affiliate links that help support the channel."
 
-# Add links under a category (or add a new category).
-#   name:        Product name (required)
+# Add a product as a .md file in _affiliates/ (like _maintenance/), e.g.
+# _affiliates/evil-energy-catch-can.md with front matter:
+#   title:       Product name (required)
+#   category:    Category id (required, matches an id below)
 #   description: How you use it
 #   url:         Affiliate link (leave blank to show "Link coming soon")
 #   retailer:    Store name for the button, e.g. "Amazon" (defaults to "Shop")
-affiliate_groups:
-  - category: Truck Parts
-    items:
-      - name: EVIL ENERGY 300 ML AN10 PCV Oil Catch Can Kit
-        description: "Helps prevent oil from contaminating the intake system."
-        url: "https://tidd.ly/4kTNWAq"
-        retailer: "Evil Energy"
-      - name: EVIL ENERGY Overflow Tank Coolant Radiator Tank Reservoir Expansion Universal Aluminum 1L/2L
-        description: "High-performance overflow tank for the truck's cooling system."
-        url: "https://tidd.ly/4iKdBu3"
-        retailer: "Evil Energy"
+#   image:       Product image URL (optional)
+# Products are listed alphabetically within each category.
+categories:
+  - id: truck-parts
+    name: Truck Parts
 ---
 
 <section class="page-hero">
@@ -46,16 +42,26 @@ affiliate_groups:
       </p>
     </div>
 
-    {% for group in page.affiliate_groups %}
-    <div class="category-heading" style="margin-bottom:1.5rem;">
-      <h3>{{ group.category }}</h3>
+    {% for category in page.categories %}
+    {% assign items = "" | split: "" %}
+    {% if site.affiliates %}
+      {% assign items = site.affiliates | where: "category", category.id | sort: "title" %}
+    {% endif %}
+    {% if items.size > 0 %}
+    <div id="{{ category.id }}" class="category-heading" style="margin-bottom:1.5rem;">
+      <h3>{{ category.name }}</h3>
     </div>
     <div class="grid grid--3" style="margin-bottom:4rem;">
-      {% for item in group.items %}
+      {% for item in items %}
       <div class="product-card">
+        {% if item.image and item.image != "" %}
+        <div class="img-container img-container--4x3 product-card__image">
+          <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+        </div>
+        {% endif %}
         <div class="product-card__body">
-          <span class="product-card__tag">{{ group.category }}</span>
-          <h3 class="product-card__title">{{ item.name }}</h3>
+          <span class="product-card__tag">{{ category.name }}</span>
+          <h3 class="product-card__title">{{ item.title }}</h3>
           {% if item.description %}<p class="product-card__description">{{ item.description }}</p>{% endif %}
           <div class="product-card__footer">
             {% if item.url and item.url != "" %}
@@ -70,6 +76,7 @@ affiliate_groups:
       </div>
       {% endfor %}
     </div>
+    {% endif %}
     {% endfor %}
 
   </div>

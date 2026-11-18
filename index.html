@@ -313,12 +313,13 @@ description: "Documenting real places, real drives, and real stories from the Pa
       </div>
       <div class="grid grid--2" style="gap:1rem;">
         {% assign shown = 0 %}
-        {% for group in affiliates_page.affiliate_groups %}
-          {% for item in group.items %}
+        {% for category in affiliates_page.categories %}
+          {% assign items = site.affiliates | where: "category", category.id | sort: "title" %}
+          {% for item in items %}
             {% if shown < 4 %}
             <div style="background:rgba(255,255,255,0.07); border-radius:8px; padding:1.25rem; border:1px solid rgba(255,255,255,0.09);">
-              <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.13em; text-transform:uppercase; color:#A89880; margin-bottom:0.5rem;">{{ group.category }}</div>
-              <div style="font-family:'Playfair Display',serif; color:#F2EDE4; font-size:0.95rem; line-height:1.35;">{{ item.name }}</div>
+              <div style="font-size:0.68rem; font-weight:600; letter-spacing:0.13em; text-transform:uppercase; color:#A89880; margin-bottom:0.5rem;">{{ category.name }}</div>
+              <div style="font-family:'Playfair Display',serif; color:#F2EDE4; font-size:0.95rem; line-height:1.35;">{{ item.title }}</div>
             </div>
             {% assign shown = shown | plus: 1 %}
             {% endif %}
